@@ -6,106 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soccer Athlete Profile</title>
     <style>
-        ody {
-            font-family: Arial, sans-serif;
+        /* Global Styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #006600;
-            color: white;
-            padding: 20px 0;
+            background-color: #003865; /* Dark blue */
+            color: #FFD700; /* Gold text */
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        h1, h2, h3 {
+            margin: 0 0 15px 0;
+            font-weight: 400;
+            color: #003865;
+        }
+
         section {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
+        .bio p, .contact p {
+            margin-bottom: 15px;
+        }
+
         h2 {
-            color: #006600;
+            font-size: 1.8em;
+            color: #003865; /* Dark blue for section headers */
+            margin-bottom: 10px;
         }
-        .bio, .highlight, .contact {
-            margin-bottom: 30px;
+
+        /* Button Styles */
+        button {
+            background-color: #003865; /* Dark blue */
+            color: #FFD700; /* Gold text */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
         }
-        .highlight iframe {
-            width: 100%;
-            height: 400px;
+
+        button:hover {
+            background-color: #002a4d;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #006600;
-            color: white;
-        }
+
+        /* Input Styles */
         input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
-        }
-        button {
-            background-color: #006600;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #004d00;
+            border-radius: 4px;
+            font-size: 1em;
         }
 
-        
-        .gallery img {
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 3px solid #003865; /* Dark blue border around images */
-        }
-
-        
-        .gallery img {
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 3px solid #003865; /* Dark blue border around images */
-        }
-
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+        /* Gallery */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-            gap: 10px;
-            justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
         }
+
         .gallery img {
             width: 100%;
             height: auto;
             object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 3px solid #003865; /* Dark blue border */
         }
-        @media (max-width: 1000px) {
+
+        /* Footer */
+        footer {
+            background-color: #003865;
+            color: #FFD700;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            section {
+                padding: 15px;
+            }
+
             .gallery img {
                 width: 100%;
             }
         }
-
-        
     </style>
 </head>
 <body>
 
 <header>
     <h1>Soccer Athlete Profile</h1>
-    <p>Frank C | #10 | Striker </p>
+    <p>Frank C | #10 | Striker</p>
 </header>
 
 <section class="bio">
@@ -132,7 +143,6 @@
 <section class="highlight">
     <h2>Highlight Reel</h2>
     <p>Check out some of my best plays and game highlights below:</p>
-    <!-- Replace the src with your actual YouTube or Vimeo video link -->
     <iframe src="https://www.youtube.com/embed/your-highlight-reel" frameborder="0" allowfullscreen></iframe>
 </section>
 
@@ -140,22 +150,12 @@
     <h2>Image Gallery</h2>
     <p>Here are some still images of me in action on the field:</p>
     <div class="gallery">
-        <!-- Add your image links here -->
-        
         <img src="https://dl.dropboxusercontent.com/scl/fi/qjhjyybo381rclmhj11co/DSC_0245.jpg?rlkey=809y1cieqd9amplnxb3belabw&st=q10wf7kt" alt="Header 2">
         <img src="https://dl.dropboxusercontent.com/scl/fi/s83ys1gxgb7n6pnqk0yp6/DSC_4369.jpg?rlkey=9n26ssovcnqz3buioe7zl20xl&st=i03vrmxi" alt="Image 4">
-        <img src="https://dl.dropboxusercontent.com/scl/fi/1ybnwfod4x00d0kxgh4le/DSC_3662.jpg?rlkey=d6h1tawuhh9w2oax5osgzxnoz&st=ipa1n4xo&" alt="Image 5">
-        <img src="https://dl.dropboxusercontent.com/scl/fi/nyji392u3jvpbc3r6s0qw/DSC_3704.jpg?rlkey=r960uxwcj6ek25o9ne9k0eq0z&st=dvu2te5h&" alt="Image 5">
-        <li> </li>
-
-        
-
-
-
+        <img src="https://dl.dropboxusercontent.com/scl/fi/1ybnwfod4x00d0kxgh4le/DSC_3662.jpg?rlkey=d6h1tawuhh9w2oax5osgzxnoz&st=ipa1n4xo" alt="Image 5">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/nyji392u3jvpbc3r6s0qw/DSC_3704.jpg?rlkey=r960uxwcj6ek25o9ne9k0eq0z&st=dvu2te5h" alt="Image 6">
     </div>
 </section>
-
-    
 
 <section class="contact">
     <h2>Contact Me</h2>
@@ -174,9 +174,8 @@
 </section>
 
 <footer>
-    <p>© 2024 [Your Name]. All Rights Reserved.</p>
+    <p>© 2024 Frank C. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
-
