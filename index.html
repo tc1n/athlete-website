@@ -64,16 +64,20 @@
             flex-wrap: wrap;
             gap: 10px;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 10px;
+            justify-items: center;
+        }
         .gallery img {
-            width: calc(33.33% - 10px);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        @media (max-width: 768px) {
-            .gallery img {
-                width: calc(50% - 10px);
-            }
-        }
-        @media (max-width: 500px) {
+        @media (max-width: 1000px) {
             .gallery img {
                 width: 100%;
             }
@@ -122,12 +126,17 @@
     <p>Here are some still images of me in action on the field:</p>
     <div class="gallery">
         <!-- Add your image links here -->
-        <img src="https://lightroom.adobe.com/shares/2ec9c332f70343ed99c32b9fdb36ef59" alt="Header 1">
-        <img src="https://adobe.ly/3MEyWEp" alt="Header 2">
-        <img src="https://adobe.ly/3XkuCPv" alt="PK vs VA Beach">
-        <img src="https://www.dropbox.com/scl/fi/s83ys1gxgb7n6pnqk0yp6/DSC_4369.jpg?rlkey=9n26ssovcnqz3buioe7zl20xl&st=i03vrmxi&dl=0" alt="Image 4">
-        <img src="https://via.placeholder.com/300x200" alt="Image 5">
-        <img src="https://via.placeholder.com/300x200" alt="Image 6">
+        
+        <img src="https://dl.dropboxusercontent.com/scl/fi/qjhjyybo381rclmhj11co/DSC_0245.jpg?rlkey=809y1cieqd9amplnxb3belabw&st=q10wf7kt" alt="Header 2">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/s83ys1gxgb7n6pnqk0yp6/DSC_4369.jpg?rlkey=9n26ssovcnqz3buioe7zl20xl&st=i03vrmxi" alt="Image 4">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/1ybnwfod4x00d0kxgh4le/DSC_3662.jpg?rlkey=d6h1tawuhh9w2oax5osgzxnoz&st=ipa1n4xo&" alt="Image 5">
+        <img src="https://dl.dropboxusercontent.com/scl/fi/nyji392u3jvpbc3r6s0qw/DSC_3704.jpg?rlkey=r960uxwcj6ek25o9ne9k0eq0z&st=dvu2te5h&" alt="Image 5">
+        <li> </li>
+
+        
+
+
+
     </div>
 </section>
 
