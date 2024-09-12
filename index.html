@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soccer Athlete - Recruitment Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #006600;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #006600;
+        }
+        .bio, .highlight, .contact {
+            margin-bottom: 30px;
+        }
+        .highlight iframe {
+            width: 100%;
+            height: 400px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #006600;
+            color: white;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #006600;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Soccer Athlete Recruitment Profile</h1>
+    <p>Your Name | Jersey # | Position</p>
+</header>
+
+<section class="bio">
+    <h2>About Me</h2>
+    <p>Hello! I am [Athlete's Name], a dedicated high school soccer player with a passion for the game. I have played as a [Position] for [School Name] and have been developing my skills for [Number of Years] years. Below are my key stats and achievements.</p>
+    
+    <h3>Stats</h3>
+    <ul>
+        <li>Age: [Your Age]</li>
+        <li>Height: [Your Height]</li>
+        <li>Weight: [Your Weight]</li>
+        <li>Graduation Year: [Your Graduation Year]</li>
+        <li>GPA: [Your GPA]</li>
+    </ul>
+
+    <h3>Achievements</h3>
+    <ul>
+        <li>[Award 1]</li>
+        <li>[Award 2]</li>
+        <li>[Tournament Win]</li>
+    </ul>
+</section>
+
+<section class="highlight">
+    <h2>Highlight Reel</h2>
+    <p>Check out some of my best plays and game highlights below:</p>
+    <!-- Replace the src with your actual YouTube or Vimeo video link -->
+    <iframe src="https://www.youtube.com/embed/your-highlight-reel" frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 [Your Name]. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
